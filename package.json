@@ -1,0 +1,32 @@
+{
+  "name": "@apiverve/keywordextractor",
+  "version": "1.0.0",
+  "description": "Keyword Extractor is a simple tool for extracting keywords from a text. It returns the keywords and the frequency of each keyword.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apiverve/keywordextractor-API.git"
+  },
+  "keywords": [
+    "keyword extractor"," keyword extraction"," keyword extractor api"," keyword extraction api"," keyword extractor tool"," keyword extraction tool"," keyword extractor software"," keyword extraction software"," keyword extractor service"," keyword extraction service"," keyword extractor library"," keyword extraction library"," keyword extractor sdk"," keyword extraction sdk"," keyword extractor code"," keyword extraction code"," keyword extractor script"," keyword extraction script"," keyword extractor program"," keyword extraction program"," keyword extractor application"," keyword extraction application"," keyword extractor app"," keyword extraction app"," keyword extractor utility"," keyword extraction utility"," keyword extractor helper"," keyword extraction helper"," keyword extractor helper tool"," keyword extraction helper tool"," keyword extractor helper software"," keyword extraction helper software"," keyword extractor helper service"," keyword extraction helper service"," keyword extractor helper library"," keyword extraction helper library"," keyword extractor helper sdk"," keyword extraction helper sdk"," keyword extractor helper code"," keyword extraction helper code"," keyword extractor helper script"," keyword extraction helper script"," keyword extractor helper program"," keyword extraction helper program"," keyword extractor helper application"," keyword extraction helper application"," keyword extractor helper app"," keyword extraction helper app"," keyword extractor helper tool"," keyword extraction helper tool"," keyword extractor helper utility"," keyword extraction helper utility"," keyword extractor helper"
+  ],
+  "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apiverve/keywordextractor-API/issues"
+  },
+  "homepage": "https://github.com/apiverve/keywordextractor-API",
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "chai": "^3.4.1",
+    "dotenv": "^2.0.0"
+  },
+  "dependencies": {
+    "node-fetch": "3.3.2",
+    "promise": "^7.1.1",
+    "request": "^2.69.0"
+  }
+}
