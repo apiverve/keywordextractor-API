@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/keywordextractor",
-  "version": "1.0.2",
-  "description": "Keyword Extractor is a simple tool for extracting keywords from a text. It returns the keywords and the frequency of each keyword.",
+  "version": "1.0.3",
+  "description": "Keyword Extractor is a simple tool for extracting keywords from a web page. It returns the keywords and the frequency of each keyword.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
