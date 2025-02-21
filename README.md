@@ -73,30 +73,29 @@ api.execute(query, function (error, data) {
   "data": {
     "url": "https://en.wikipedia.org/wiki/Email_address",
     "keywords": {
-      "email": 90,
-      "address": 60,
+      "email": 91,
+      "address": 61,
       "mail": 53,
       "domain": 34,
       "addresses": 34,
       "characters": 27,
       "retrieved": 27,
       "internet": 17,
-      "message": 16,
+      "message": 15,
       "validation": 12,
       "mailbox": 12,
       "errata": 12,
       "allowed": 12,
       "messages": 11,
       "systems": 10,
+      "ietf": 10,
       "names": 10,
       "user": 10,
       "protocol": 10,
-      "july": 9,
-      "solid": 9,
-      "ietf": 9,
       "internationalized": 9,
-      "articles": 8,
+      "solid": 9,
       "account": 8,
+      "addressing": 8,
       "host": 8,
       "simple": 8,
       "transfer": 8,
@@ -106,10 +105,10 @@ api.execute(query, function (error, data) {
       "additional": 7,
       "syntax": 7,
       "verification": 7,
-      "addressing": 7,
       "form": 7,
       "format": 7,
-      "technical": 6,
+      "klensin": 7,
+      "july": 6,
       "tools": 6,
       "valid": 6,
       "internationalization": 6,
@@ -118,11 +117,12 @@ api.execute(query, function (error, data) {
       "services": 6,
       "case": 6,
       "smtp": 6,
-      "klensin": 6,
       "ascii": 6,
       "backslash": 6,
       "servers": 6,
-      "server": 6
+      "server": 6,
+      "original": 6,
+      "archived": 6
     }
   },
   "code": 200
@@ -151,7 +151,7 @@ All usage of the APIVerve website, API, and services is subject to the [APIVerve
 ## License
 Licensed under the The MIT License (MIT)
 
-Copyright (&copy;) 2024 APIVerve, and Evlar LLC
+Copyright (&copy;) 2025 APIVerve, and EvlarSoft LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
