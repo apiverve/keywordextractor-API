@@ -1,24 +1,26 @@
 {
   "name": "@apiverve/keywordextractor",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "Keyword Extractor is a simple tool for extracting keywords from a web page. It returns the keywords and the frequency of each keyword.",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "example": "node examples/basic.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/apiverve/keywordextractor-API.git"
   },
   "keywords": [
-    "keyword extractor","keyword extraction","keyword extractor api","keyword extraction api","keyword extractor tool"
+    "keyword extractor", "keyword extraction", "keyword extractor api", "keyword extraction api", "keyword extractor tool"
   ],
   "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/apiverve/keywordextractor-API/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/api/keywordextractor?utm_source=npm",
+  "homepage": "https://apiverve.com/marketplace/keywordextractor?utm_source=npm",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
@@ -27,6 +29,6 @@
   "dependencies": {
     "node-fetch": "^3.3.2",
     "promise": "^8.3.0",
-    "axios": "1.7.9"
+    "axios": "1.13.2"
   }
 }
