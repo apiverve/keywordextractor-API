@@ -1,23 +1,25 @@
 openapi: 3.0.4
 info:
   title: Keyword Extractor
-  description: Keyword Extractor is a simple tool for extracting keywords from a web page. It returns the keywords and the frequency of each keyword.
+  description: >-
+    Keyword Extractor is a simple tool for extracting keywords from a web page.
+    It returns the keywords and the frequency of each keyword.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/keywordextractor:
     post:
-      summary: Extract Keywords
-      description: Keyword Extractor is a simple tool for extracting keywords from a web page. It returns the keywords and the frequency of each keyword.
+      summary: Extract Keywords from Text
+      description: Extract keywords from a body of text
       operationId: keywordextractor
       parameters: []
       responses:
@@ -35,17 +37,17 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   url: https://en.wikipedia.org/wiki/Email_address
                   keywords:
-                    email: 91
+                    email: 94
                     address: 61
-                    mail: 53
+                    mail: 52
                     domain: 34
                     addresses: 34
                     characters: 27
@@ -57,10 +59,10 @@ paths:
                     errata: 12
                     allowed: 12
                     messages: 11
+                    user: 11
                     systems: 10
                     ietf: 10
                     names: 10
-                    user: 10
                     protocol: 10
                     internationalized: 9
                     solid: 9
@@ -76,6 +78,7 @@ paths:
                     syntax: 7
                     verification: 7
                     form: 7
+                    case: 7
                     format: 7
                     klensin: 7
                     july: 6
@@ -85,7 +88,6 @@ paths:
                     group: 6
                     system: 6
                     services: 6
-                    case: 6
                     smtp: 6
                     ascii: 6
                     backslash: 6
@@ -98,7 +100,7 @@ paths:
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
       requestBody:
         required: true
         content:
@@ -110,9 +112,7 @@ paths:
                   type: string
                   description: The text to extract keywords from
               required:
-              - text
-              example:
-                url: https://en.wikipedia.org/wiki/Email_address
+                - text
 components:
   securitySchemes:
     api_key:
@@ -120,4 +120,6 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
+sampleRequest:
+  url: https://en.wikipedia.org/wiki/Email_address
