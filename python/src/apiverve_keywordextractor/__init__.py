@@ -1,1 +1,3 @@
-from .apiClient import KeywordextractorAPIClient
+from .apiClient import KeywordextractorAPIClient, KeywordextractorAPIClientError
+
+__all__ = ['KeywordextractorAPIClient', 'KeywordextractorAPIClientError']
