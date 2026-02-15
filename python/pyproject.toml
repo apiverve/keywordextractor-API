@@ -1,17 +1,20 @@
 [project]
 name = "apiverve-keywordextractor"
-version = "1.1.12"
+version = "1.1.13"
 authors = [
   { name="APIVerve", email="hello@apiverve.com" },
 ]
 description = "Keyword Extractor is a simple tool for extracting keywords from a web page. It returns the keywords and the frequency of each keyword."
-keywords = ["keyword extractor", "keyword extraction", "keyword extractor api", "keyword extraction api", "keyword extractor tool"]
+keywords = []
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.7"
+license = "MIT"
+dependencies = [
+    "requests>=2.25.0"
+]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Intended Audience :: Developers",
     "Intended Audience :: Financial and Insurance Industry",
