@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:keywordextractor-api:1.1.13'
+    implementation 'com.github.apiverve:keywordextractor-api:1.1.14'
 }
 ```
 
@@ -47,7 +47,7 @@ KeywordExtractorAPIClient client = new KeywordExtractorAPIClient("YOUR_API_KEY")
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("text", "");
+    parameters.put("text", "example");
 
     // Execute the request
     APIResponse response = client.execute(parameters);
