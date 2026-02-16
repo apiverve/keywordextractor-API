@@ -268,8 +268,9 @@ from apiverve_keywordextractor.apiClient import KeywordextractorAPIClient
 
 api = KeywordextractorAPIClient("[YOUR_API_KEY]")
 
+query = { "url": "https://en.wikipedia.org/wiki/Email_address" }
+
 try:
-    query = { "url": "https://en.wikipedia.org/wiki/Email_address" }
     result = api.execute(query)
     print(result)
 finally:
