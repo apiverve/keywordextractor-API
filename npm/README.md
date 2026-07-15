@@ -123,58 +123,48 @@ async function makeRequest() {
   "error": null,
   "data": {
     "url": "https://en.wikipedia.org/wiki/Email_address",
+    "keywordCount": 50,
+    "topKeyword": "email",
+    "totalOccurrences": 672,
     "keywords": {
-      "email": 91,
+      "email": 94,
       "address": 61,
-      "mail": 53,
+      "mail": 52,
       "domain": 34,
       "addresses": 34,
       "characters": 27,
       "retrieved": 27,
       "internet": 17,
       "message": 15,
-      "validation": 12,
-      "mailbox": 12,
-      "errata": 12,
-      "allowed": 12,
-      "messages": 11,
-      "systems": 10,
-      "ietf": 10,
-      "names": 10,
-      "user": 10,
-      "protocol": 10,
-      "internationalized": 9,
-      "solid": 9,
-      "account": 8,
-      "addressing": 8,
-      "host": 8,
-      "simple": 8,
-      "transfer": 8,
-      "mailboxes": 8,
-      "character": 8,
-      "quoted": 8,
-      "additional": 7,
-      "syntax": 7,
-      "verification": 7,
-      "form": 7,
-      "format": 7,
-      "klensin": 7,
-      "july": 6,
-      "tools": 6,
-      "valid": 6,
-      "internationalization": 6,
-      "group": 6,
-      "system": 6,
-      "services": 6,
-      "case": 6,
-      "smtp": 6,
-      "ascii": 6,
-      "backslash": 6,
-      "servers": 6,
-      "server": 6,
-      "original": 6,
-      "archived": 6
-    }
+      "validation": 12
+    },
+    "topKeywords": [
+      {
+        "keyword": "email",
+        "count": 94,
+        "percentage": 14
+      },
+      {
+        "keyword": "address",
+        "count": 61,
+        "percentage": 9.1
+      },
+      {
+        "keyword": "mail",
+        "count": 52,
+        "percentage": 7.7
+      },
+      {
+        "keyword": "domain",
+        "count": 34,
+        "percentage": 5.1
+      },
+      {
+        "keyword": "addresses",
+        "count": 34,
+        "percentage": 5.1
+      }
+    ]
   }
 }
 ```
