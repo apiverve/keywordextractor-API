@@ -25,6 +25,9 @@ namespace APIVerve.API.KeywordExtractor
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -32,7 +35,76 @@ namespace APIVerve.API.KeywordExtractor
         [JsonProperty("url")]
         public Uri Url { get; set; }
 
+        [JsonProperty("keywordCount")]
+        public long? KeywordCount { get; set; }
+
+        [JsonProperty("topKeyword")]
+        public string TopKeyword { get; set; }
+
+        [JsonProperty("totalOccurrences")]
+        public long? TotalOccurrences { get; set; }
+
         [JsonProperty("keywords")]
-        public Dictionary<string, long> Keywords { get; set; }
+        public Keywords Keywords { get; set; }
+
+        [JsonProperty("topKeywords")]
+        public TopKeyword[] TopKeywords { get; set; }
+    }
+
+    public partial class Keywords
+    {
+        [JsonProperty("email")]
+        public long? Email { get; set; }
+
+        [JsonProperty("address")]
+        public long? Address { get; set; }
+
+        [JsonProperty("mail")]
+        public long? Mail { get; set; }
+
+        [JsonProperty("domain")]
+        public long? Domain { get; set; }
+
+        [JsonProperty("addresses")]
+        public long? Addresses { get; set; }
+
+        [JsonProperty("characters")]
+        public long? Characters { get; set; }
+
+        [JsonProperty("retrieved")]
+        public long? Retrieved { get; set; }
+
+        [JsonProperty("internet")]
+        public long? Internet { get; set; }
+
+        [JsonProperty("message")]
+        public long? Message { get; set; }
+
+        [JsonProperty("validation")]
+        public long? Validation { get; set; }
+    }
+
+    public partial class TopKeyword
+    {
+        [JsonProperty("keyword")]
+        public string Keyword { get; set; }
+
+        [JsonProperty("count")]
+        public long? Count { get; set; }
+
+        [JsonProperty("percentage")]
+        public double? Percentage { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
