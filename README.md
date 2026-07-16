@@ -197,11 +197,70 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Keyword Extractor API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "url": "https://en.wikipedia.org/wiki/Email_address",
+    "keywordCount": 50,
+    "topKeyword": "email",
+    "totalOccurrences": 672,
+    "keywords": {
+      "email": 94,
+      "address": 61,
+      "mail": 52,
+      "domain": 34,
+      "addresses": 34,
+      "characters": 27,
+      "retrieved": 27,
+      "internet": 17,
+      "message": 15,
+      "validation": 12
+    },
+    "topKeywords": [
+      {
+        "keyword": "email",
+        "count": 94,
+        "percentage": 14
+      },
+      {
+        "keyword": "address",
+        "count": 61,
+        "percentage": 9.1
+      },
+      {
+        "keyword": "mail",
+        "count": 52,
+        "percentage": 7.7
+      },
+      {
+        "keyword": "domain",
+        "count": 34,
+        "percentage": 5.1
+      },
+      {
+        "keyword": "addresses",
+        "count": 34,
+        "percentage": 5.1
+      }
+    ]
+  }
 }
 ```
 
