@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/keywordextractor",
+    "description": "Keyword Extractor is a simple tool for extracting keywords from a web page. It returns the keywords and the frequency of each keyword.",
+    "version": "1.2.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "keywordextractor",
+        "keyword extractor",
+        "keyword extraction",
+        "keyword extractor api",
+        "keyword extraction api",
+        "keyword extractor tool"
+    ],
+    "homepage": "https://apiverve.com/marketplace/keywordextractor?utm_source=php&utm_medium=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/keywordextractor",
+        "source": "https://github.com/apiverve/keywordextractor-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Keywordextractor\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Keywordextractor\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
